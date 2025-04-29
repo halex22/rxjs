@@ -1,6 +1,8 @@
 <div>
   <button (click)="subscribeSbj()">subscribe sbj</button>
+  <button (click)="unsubscribe()">Unsubscribe</button>
   <button (click)="subscribeBeSbj()">subscribe beSbj</button>
   <button (click)="subscribeReSbj()">subscribe reSbj</button>
 
+  <span>{{service.beSbj | async }}</span>
 </div>

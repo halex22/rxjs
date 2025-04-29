@@ -12,16 +12,16 @@ export class MasterComponent {
   service = inject(ComService)
   
   changeReSbj() {
-    const newString = 'normalSubject' + Date.now()
-    this.service.sbj.next(newString)
+    const newString = 'replay Subject' + Date.now()
+    this.service.reSbj.next(newString)
   }
   changeBeSbj() {
-    const newString = 'BehaviorSubject' + Date.now()
+    const newString = 'Behavior Subject' + Date.now()
     this.service.beSbj.next(newString)
   }
   changeSbj() {
-    const newString = 'Re Subject' + Date.now()
-    this.service.reSbj.next(newString)
+    const newString = 'normal Subject' + Date.now()
+    this.service.sbj.next(newString)
   }
   
 }
